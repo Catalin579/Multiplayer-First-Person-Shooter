@@ -17,7 +17,7 @@ public class PlayerSpawner : MonoBehaviour
 
     public GameObject deathEffect;
 
-    public float respawnTine = 5f;
+    public float respawnTime = 5f;
 
     void Start()
     {
@@ -56,7 +56,7 @@ public class PlayerSpawner : MonoBehaviour
         PhotonNetwork.Destroy(player);
         UIController.instance.deathScreen.SetActive(true);
 
-        yield return new WaitForSeconds(respawnTine);
+        yield return new WaitForSeconds(respawnTime);
 
         UIController.instance.deathScreen.SetActive(false);
 
