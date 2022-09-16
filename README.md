@@ -1,5 +1,4 @@
 # Online-FPS
-Online First Person Shooter Game made in Unity
 
 ## The elements of the game are:
 
