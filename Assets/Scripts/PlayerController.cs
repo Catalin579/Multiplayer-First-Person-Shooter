@@ -44,7 +44,7 @@ public class PlayerController : MonoBehaviourPunCallbacks
     private int currentHealth;
 
     public Animator anim;
-
+    public GameObject playerModel;
 
     void Start()
     {
@@ -58,12 +58,17 @@ public class PlayerController : MonoBehaviourPunCallbacks
 
         currentHealth = maxHealth;
 
-        UIController.instance.healthSlider.maxValue = maxHealth;
-        UIController.instance.healthSlider.value = currentHealth;
-
         //Transform newTrans = SpawnManager.instance.GetSpawnPoint();
         //transform.position = newTrans.position;
         //transform.rotation = newTrans.rotation;
+
+        if (photonView.IsMine)
+        {
+            playerModel.SetActive(false);
+
+            UIController.instance.healthSlider.maxValue = maxHealth;
+            UIController.instance.healthSlider.value = currentHealth;
+        }
     }
 
 
