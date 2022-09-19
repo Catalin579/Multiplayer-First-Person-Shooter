@@ -4902,8 +4902,6 @@ MonoBehaviour:
   levelToPlay: Map 1
   startButton: {fileID: 527246458}
   roomTestButton: {fileID: 1335525986}
-  allMaps: []
-  changeMapBetweenRounds: 0
 --- !u!1 &1763508344
 GameObject:
   m_ObjectHideFlags: 0
@@ -4962,7 +4960,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Game Name
+  m_text: GUNS and RUSH
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2100000, guid: 79459efec17a4d00a321bdcc27bbc385, type: 2}
@@ -4989,13 +4987,13 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 259.75
+  m_fontSize: 196.4
   m_fontSizeBase: 200
   m_fontWeight: 400
   m_enableAutoSizing: 1
   m_fontSizeMin: 18
   m_fontSizeMax: 300
-  m_fontStyle: 19
+  m_fontStyle: 3
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
   m_textAlignment: 65535
