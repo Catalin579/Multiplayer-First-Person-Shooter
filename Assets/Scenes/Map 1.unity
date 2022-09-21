@@ -2130,6 +2130,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0dd316b7f8bdc79458b73a65c5bfec53, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  allPlayers: []
+  theEvent: 0
 --- !u!4 &682380505
 Transform:
   m_ObjectHideFlags: 0
