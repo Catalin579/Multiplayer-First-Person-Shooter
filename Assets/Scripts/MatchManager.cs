@@ -95,7 +95,6 @@ public class MatchManager : MonoBehaviourPunCallbacks, IOnEventCallback
         package[2] = 0;
         package[3] = 0;
 
-
         PhotonNetwork.RaiseEvent(
             (byte)EventCodes.NewPlayer,
             package,
@@ -105,7 +104,9 @@ public class MatchManager : MonoBehaviourPunCallbacks, IOnEventCallback
 
     public void NewPlayerReceive(object[] dataReceived)
     {
-        
+        PlayerInfo player = new PlayerInfo((string)dataReceived[0], (int)dataReceived[1], (int)dataReceived[2], (int)dataReceived[3]);
+
+        allPlayers.Add(player);
     }
 
     public void ListPlayersSend()
